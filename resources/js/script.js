@@ -95,4 +95,20 @@ $(document).ready(() => {
             icon.removeClass('ion-close-round');
         }
     });
+    
+    /* Maps */
+    let map = new GMaps({
+        div: '.map',
+        lat: -22.733941,
+        lng: -47.6246716
+    });
+    
+    map.addMarker({
+        lat: -22.7338613,
+        lng: -47.638362,
+        title: 'Omnifood',
+        infoWindow: {
+            content: '<p>Our Piracicaba HQ</p>'
+        }
+    });
 });
